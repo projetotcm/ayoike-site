@@ -5,25 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <title>AyoIke</title>
 </head>
 <body>
-    <main>
-        <!-- NavBar-->
-        <nav>
+    <!-- NavBar-->
+    <header class="header">
+        <nav id="navbar" class="navbar">
+            
+            
+            <ul class="navbar-nav" style="flex-direction:row ;">
+                <a class="navbar-brand" href="#home">
+                    <img src="./assets/img/logo_navbar.png" alt="Logo inicial - AyoIke">
+                        </a>
+                        
+                        <li class="mx-2 nav-item"><a class="navbar_link" href="#home">Home</a></li>
+                        <li class="mx-2 nav-item"><a class="navbar_link " href="#sobre ">Sobre nós</a></li>
+                        <li class="mx-2 nav-item"><a class="navbar_link" href="#integrantes ">Integrantes</a></li>
+                        <li class="mx-2 nav-item"><a class="navbar_link " href="#projetos ">Projetos</a></li>
+                        <li class="mx-2 nav-item"><a class="navbar_link " href="#contato ">Contato</a></li>
+                        <li></li>
+                        <li>
+                        </li>
+                    </ul> 
+                    
+                </nav>
+            </header>
+            
+            <!-- Início -->
+            <main>
+<section class="inicio" style="margin-top: 4em;"></section>
+    <div class="grid">
+            <div style=" max-width: 300px;">
+                <aside>
 
-        </nav>
-        <!-- Início -->
-<section class="inicio"></section>
+                    <h1 style="color: #3E066F;">AYOIKE, SOLUÇÕES EM <span style="color:#FF9527;">TECNOLOGIA</span></h1>
+                    <p>Ayoike é uma startup fundada por um grupo 
+                        
+                        de sete jovens, que teem como intenção 
+                        
+                        inovar na área de T.I </p>
+                        <a href="">
+                            <button class="btn-purple">SAIBA MAIS</button>
+                        </a>
+                    </aside>
 
+                    <article>
+                        <img src="./assets/img/teste.svg" alt="">
+                    </article>
+                    </div>
+           
+    </div>
         <!-- Sobre Nós -->
-        <section class="sobre"></section>
+        <section class="sobre">
+            <h2 class="subtitles">Sobre nós</h2>
+            <div style="display: flex;">
+                <img src="./assets/img/sobre.png" alt="Ilustração (grupo) - Sobre nós" style="max-width:500px ;">
+                <aside>
+                    
+                    <p style="padding: 5em;">Nós somos uma startup criada em 2021, composta por sete jovens com sede de reinventar no mercado da tecnologia. O nome “Ayoike” tem muito significado, pois é a junção de dois nomes africanos que nos representa como equipe. “Ayo” que significa alegria e “Ike” que significa força. Ayoike desenvolve soluções em tecnologia como: Sistemas, sites e produtos de design gráfico.</p>
+                </aside>
+            </div>
+        </section>
         <!-- Integrantes -->
+        <section class="integrantes">
+            <h2 class="subtitles">Integrantes</h2>
+        </section>
         <!-- Projetos -->
+        <section class="projetos">
+            <h2 class="subtitles">Projetos</h2>
+
+        </section>
         <!-- Contato -->
+        <section class="contato">
+            <h2 class="subtitles">Entre em contato conosco!</h2>
+        </section>
     </main>
     <!-- Rodapé-->
-    <footer></footer>
+   
     <!-- Script -->
     <script src="./assets/js/script.js"></script>
 </body>
