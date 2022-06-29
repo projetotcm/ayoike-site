@@ -1,93 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>AyoIke</title>
 </head>
+
 <body>
-    <!-- NavBar-->
-    <header class="header">
-        <nav id="navbar" class="navbar">
-            
-            
-            <ul class="navbar-nav" style="flex-direction:row ;">
-                <a class="navbar-brand" href="#home">
-                    <img src="./assets/img/logo_navbar.png" alt="Logo inicial - AyoIke">
-                        </a>
-                        
-                        <li class="mx-2 nav-item"><a class="navbar_link" href="#home">Home</a></li>
-                        <li class="mx-2 nav-item"><a class="navbar_link " href="#sobre ">Sobre nós</a></li>
-                        <li class="mx-2 nav-item"><a class="navbar_link" href="#integrantes ">Integrantes</a></li>
-                        <li class="mx-2 nav-item"><a class="navbar_link " href="#projetos ">Projetos</a></li>
-                        <li class="mx-2 nav-item"><a class="navbar_link " href="#contato ">Contato</a></li>
-                        <li></li>
-                        <li>
-                        </li>
-                    </ul> 
-                    
-                </nav>
-            </header>
-            
-            <!-- Início -->
-            <main>
-<section class="inicio" style="margin-top: 4em;"></section>
-    <div class="grid">
-            <div style=" max-width: 300px;">
-                <aside>
 
-                    <h1 style="color: #3E066F;">AYOIKE, SOLUÇÕES EM <span style="color:#FF9527;">TECNOLOGIA</span></h1>
-                    <p>Ayoike é uma startup fundada por um grupo 
-                        
-                        de sete jovens, que teem como intenção 
-                        
-                        inovar na área de T.I </p>
-                        <a href="">
-                            <button class="btn-purple">SAIBA MAIS</button>
-                        </a>
-                    </aside>
+    <header>
+        <img class="logo" src="./assets/img/logo.svg" alt="Logo AyoIke">
+        <ul>
+            <a href="#inicio">
+                <li>Início</li>
+            </a>
+            <a href="#sobre">
+                <li>Sobre nós</li>
+            </a>
+            <a href="#integrantes">
+                <li>Integrantes</li>
+            </a>
+            <a href="#projetos">
+                <li>Projetos</li>
+            </a>
+            <a href="#contato">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </header>
 
-                    <article>
-                        <img src="./assets/img/teste.svg" alt="">
-                    </article>
-                    </div>
-           
-    </div>
-        <!-- Sobre Nós -->
-        <section class="sobre">
-            <h2 class="subtitles">Sobre nós</h2>
-            <div style="display: flex;">
-                <img src="./assets/img/sobre.png" alt="Ilustração (grupo) - Sobre nós" style="max-width:500px ;">
-                <aside>
-                    
-                    <p style="padding: 5em;">Nós somos uma startup criada em 2021, composta por sete jovens com sede de reinventar no mercado da tecnologia. O nome “Ayoike” tem muito significado, pois é a junção de dois nomes africanos que nos representa como equipe. “Ayo” que significa alegria e “Ike” que significa força. Ayoike desenvolve soluções em tecnologia como: Sistemas, sites e produtos de design gráfico.</p>
-                </aside>
-            </div>
-        </section>
-        <!-- Integrantes -->
-        <section class="integrantes">
-            <h2 class="subtitles">Integrantes</h2>
-        </section>
-        <!-- Projetos -->
-        <section class="projetos">
-            <h2 class="subtitles">Projetos</h2>
+    <main id="inicio">
+        <aside>
+            <h2 style="color: #3E066F;">AYOIKE,SOLUÇÕES</h2>
+            <h2 style="color: #3E066F;">EM <span style="color:#FF9527;">TECNOLOGIA</span></h2>
+            <p class="texto-introdutorio">Ayoike é uma startup fundada por um grupo
+                de sete jovens, que teem como intenção
+                inovar na área de T.I.</p>
+            <button class="saiba-mais">SAIBA MAIS</button>
+        </aside>
 
-        </section>
-        <!-- Contato -->
-        <section class="contato">
-            <h2 class="subtitles">Entre em contato conosco!</h2>
-        </section>
+        <article>
+            <img class="img-principal" src="./assets/img/principal.svg" alt="imagem principal">
+        </article>
     </main>
-    <!-- Rodapé-->
-   
+
+    <section id="sobre">
+        <h2 class="subtitulo">Sobre nós</h2>
+        <div style="display: flex;">
+            <img class="imagem-grupo" src="./assets/img/imagem-grupo.svg" alt="Ilustração (grupo) - Sobre nós" style="max-width:500px ;">
+            <aside>
+
+                <p class="texto-sobre-nós">Nós somos uma startup criada em 2021, composta por sete jovens com sede de
+                    reinventar no mercado da tecnologia. O nome “Ayoike” tem muito significado, pois é a junção de dois
+                    nomes africanos que nos representa como equipe. “Ayo” que significa alegria e “Ike” que significa
+                    força. Ayoike desenvolve soluções em tecnologia como: Sistemas, sites e produtos de design gráfico.
+                </p>
+            </aside>
+        </div>
+    </section>
+    <section class="integrantes" id="integrantes">
+        <h2 class="subtitulo">Integrantes</h2>
+        <div class="grid">
+            <div class="integrantes-div"> 
+                <img src="./assets/img/dani.png" alt="Icon">
+                <h3>Daniel Torres</h3>
+                <p class="integrantes-p">O experiente Daniel Torres (ou Dani), de 21 anos, é nosso desenvolvedor Mobile e desenvolvedor Back-End.</p>
+                <br />
+                <a href="https://github.com/DanielTorres28" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div> 
+            <div class="integrantes-div"> 
+                <img src="./assets/img/gicadois.png" alt="Icon">
+                <h3>Giovanna Alves</h3>
+                <p class="integrantes-p">Giovanna Alves (mais conhecida como Gica) tem 17 anos e é desenvolvedora em Infraestrutura e IOT <strong>(Internet of Things)</strong>.</p>
+                
+                <a href="https://github.com/gicaAlves" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div> 
+            <div class="integrantes-div"> 
+                <img src="./assets/img/donha.png" alt="Icon">
+                <h3>Gustavo Donha</h3>
+                <p class="integrantes-p">O analista Gustavo Donha (o conhecido Donha), de 19 anos, é mais um dos nossos integrantes da AyoIke.</p>
+                <br />
+                <a href="https://github.com/Doinha123" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div> 
+            <div class="integrantes-div"> 
+                <img src="./assets/img/johnny.png" alt="Icon">
+                <h3>Johnny Mendes</h3>
+                <p class="integrantes-p">Johnny Mendes (nosso queridíssimo Johnny), de 20 anos, é mais um encarregado pelo Back-End na empresa.</p>
+                <a href="https://github.com/Jhow189" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div> 
+            <div class="integrantes-div"> 
+                <img src="./assets/img/may_dois.png" alt="Icon">
+                <h3>Mayara Marques</h3>
+                <p class="integrantes-p">A Mayara Marques (a May), de 18 anos, é desenvolvedora Front-End e a líder da AyoIke.</p>
+                <br/>
+                <br/>
+                <a href="https://github.com/Mayara2003" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div> 
+            <div class="integrantes-div"> 
+                <img src="./assets/img/pedro.png" alt="Icon">
+                <h3>Pedro Miguel</h3>
+                <p class="integrantes-p">Pedro Miguel (ou apenas Pedro), de 20 anos, é desenvolvedor de banco de dados e analista de sistemas. </p>
+                <br />
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div>
+             <div class="integrantes-div"> 
+                <img src="./assets/img/valendois.jpg" alt="Icon" class="img-integrantes">
+                <h3>Valentina Corradini</h3>
+                <p class="integrantes-p">Desenvolvedora Front-End e Mobile da AyoIke, Valentina Prado (mais conhecida como Valen), de 17 anos, também faz parte do nosso time.</p>
+                <a href="https://github.com/valencprado" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-integrantes">GitHub</button>
+                </a>
+            </div>
+           
+        </div>
+    </section>
+<section class="projetos" id="projetos">
+    <h2 class="subtitulo">Projetos</h2>
+    <div class="grid">
+        <a href="https://github.com/Mayara2003/mayasong" target="_blank" rel="noopener noreferrer">
+            <div class="projeto">
+                <img src="./assets/img/maya-song.png" alt="Maya Song" class="img-projetos">
+                <h3 class="projeto-titulo"> &nbsp; Maya Song 🎵</h3>
+            </div>
+        </a>
+        <a href="https://github.com/valencprado/controle-de-gastos" target="_blank" rel="noopener noreferrer">    
+            <div class="projeto">
+                <img src="https://valencprado.github.io/personal-website/assets/img/controledegastos.png"class="img-projetos" alt="Controle de Gastos" style="width:100%">
+                <h3> &nbsp; Controle de Gastos 💵</h3>
+            </div>
+        </a>
+        <a href="https://github.com/gicaAlves/pw-penguin-papelaria" target="_blank" rel="noopener noreferrer">
+            <div class="projeto">
+                <img src="./assets/img/penguin-papelaria.png" alt="Penguin Papelaria" class="img-projetos" style="max-width:385px">
+                <h3> &nbsp;Penguin Papelaria 🐧</h3>
+            </div>
+        </a>
+        <a href="https://github.com/DanielTorres28/LojaGamesApp" target="_blank" rel="noopener noreferrer">
+            <div class="projeto">
+                <img src="./assets/img/games.jpg" alt="Loja de Games" class="img-projetos">
+                <img src="./assets/img/games.jpg" alt="Loja de Games" class="img-projetos">
+                <img src="./assets/img/games.jpg" alt="Loja de Games" class="img-projetos" style="width: 145px;">
+                <h3> &nbsp; Loja de Games 🕹️</h3>
+            </div>
+        </a>
+        <a href="https://github.com/projetotcm/asp-flamboyant" target="_blank" rel="noopener noreferrer">
+            <div class="projeto">
+                <img src="./assets/img/flamboyant.png" alt="Restaurante Flamboyant"class="img-projetos" >
+                <h3> &nbsp; E-commerce Flamboyant 🌱</h3>
+            </div>
+        </a>
+        <a href="https://github.com/valencprado/LojaPHP" target="_blank" rel="noopener noreferrer">
+            <div class="projeto">
+                <img src="https://valencprado.github.io/personal-website/assets/img/lojaPHP.png" style="width:100%" alt="Loja de Discos" class="img-projetos">
+                <h3>&nbsp; Loja Discozz 💽</h3>
+            </div>
+        </a>
+    </div>
+</section>
+    <section class="integrantes">
+        <h2 class="subtitulo">Entre em contato conosco!</h2>
+    </section>
+
+    <section class="contato" id="contato">
+        <!-- <h2 class="subtitulo">Entre em contato conosco!</h2> -->
+        <div class="social-media">
+            <a href="#">
+              <img src="./assets/img/logo-google.svg" alt="Google">
+            </a>
+
+            <a href="#">
+                <img src="./assets/img/logo-facebook.svg" alt="Facebook">
+            </a>
+
+            <a href="#">
+                <img src="./assets/img/logo-linkedin.svg" alt="Linkedin">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>OU</span>
+        </div>
+
+        <form action="">
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="name" name="name">
+            </label>
+
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email" name="email">
+            </label>
+
+            <form action="">
+                <label for="comentario">
+                    <span>Comentário</span>
+                    <input type="text" id="comentario" name="comentario">
+                </label>
+
+            <input type="submit" value="Enviar" id="button">
+            <br />
+        </form>
+
+        <section class="images">
+            <img class="img-formulario" src="./assets/img/imagem-formulario.svg" alt="Mulher sentada">
+        </section>
+    </section>
+<br />
+    <!-- <section class="images">
+        <img src="./assets/img/imagem-formulario.svg" alt="Mulher sentada">
+    </section> -->
+
+    <footer>Todos direitos reservados - ©2022</footer>
     <!-- Script -->
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
